@@ -1,7 +1,6 @@
-use WhatsUp
 declare @version nvarchar(50)
 declare @versionNum int
-select @version = Max(version) from PlugInDataSourceVersion where version not like '19%'
+select @version = Max(version) from PlugInDataSourceVersion
 if(@version like '19.%')
 begin
 set @versionNum = 19
@@ -9,6 +8,10 @@ end
 if(@version like '18.%')
 begin
 set @versionNum = 18
+end
+if(@version like '17.%')
+begin
+set @versionNum = 17
 end
 if(select count(*) from [dbo].[DashboardView] where DashboardViewID = 1) = 0
 Begin
