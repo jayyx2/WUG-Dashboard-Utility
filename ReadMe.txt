@@ -19,6 +19,6 @@ The file "default_dashboard.txt" contains the SQL statements required to recreat
 the default dashboards. It is set to read-only, should not be modified, and 
 needs to be in the same directory as the .exe.
 
-If encounter any problems or have questions, e-mail jalberino@ipswitch.com. Enjoy!
+If encounter any problems or have questions, e-mail jason@wug.ninja Enjoy!
 
 --Jason
